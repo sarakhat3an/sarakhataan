@@ -39,20 +39,8 @@ import {
   useInView,
   useSpring,
 } from "framer-motion";
-import {
-  Github,
-  ExternalLink,
-  Mail,
-  Linkedin,
-  ArrowDown,
-  FileText,
-  Terminal,
-  Cpu,
-  Brain,
-  Pen,
-  ChevronRight,
-} from "lucide-react";
-
+import { GitBranch, ExternalLink, Mail, ArrowDown, FileText, Terminal, 
+  Cpu, Brain, Pen, ChevronRight } from "lucide-react";
 // ─────────────────────────────────────────────────────────────────────────────
 // TAILWIND CONFIG EXTENSION (paste into tailwind.config.js)
 // ─────────────────────────────────────────────────────────────────────────────
@@ -1420,10 +1408,10 @@ function Contact() {
   const inView = useInView(ref, { once: true, margin: "-80px" });
 
   const links = [
-    { label: "GitHub", href: DATA.github, icon: Github },
-    { label: "LinkedIn", href: DATA.linkedin, icon: Linkedin },
-    { label: `Email — ${DATA.email}`, href: `mailto:${DATA.email}`, icon: Mail },
-    { label: "Resume / CV", href: "#", icon: FileText, download: true },
+    { label: "GitHub", href: DATA.github, icon: GitBranch },
+{ label: "LinkedIn", href: DATA.linkedin, icon: ExternalLink },
+{ label: `Email — ${DATA.email}`, href: `mailto:${DATA.email}`, icon: Mail },
+{ label: "Resume / CV", href: "#", icon: FileText, download: true },
   ];
 
   return (
