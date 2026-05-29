@@ -359,6 +359,7 @@ function CustomCursor() {
       {/* Dot */}
       <div
         ref={cursorDot}
+        className="custom-cursor"
         aria-hidden="true"
         style={{
           position: "fixed",
@@ -377,6 +378,7 @@ function CustomCursor() {
       {/* Ring */}
       <div
         ref={cursorRing}
+        className="custom-cursor"
         aria-hidden="true"
         style={{
           position: "fixed",
@@ -1600,7 +1602,17 @@ export default function Portfolio() {
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=DM+Mono:wght@300;400&family=DM+Sans:wght@300;400;500&display=swap');
         * { box-sizing: border-box; margin: 0; padding: 0; }
-        html { scroll-behavior: smooth; cursor: none; }
+        html {
+  scroll-behavior: smooth;
+}
+
+@media (pointer: fine) {
+  html { cursor: none; }
+}
+
+@media (pointer: coarse) {
+  .custom-cursor { display: none !important; }
+}
         body {
           background: ${COLORS.bg};
           color: ${COLORS.textBright};
