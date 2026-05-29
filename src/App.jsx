@@ -63,13 +63,13 @@ import { GitBranch, ExternalLink, Mail, ArrowDown, FileText, Terminal,
 // DATA — edit this to personalize
 // ─────────────────────────────────────────────────────────────────────────────
 const DATA = {
-  name: "Your Name",
-  initials: "Y.N.",
+  name: "Sara Khataan",
+  initials: "S.K.",
   title: "Computer Engineering Student",
   location: "Cairo, Egypt",
-  email: "hello@yourname.com",
-  github: "https://github.com/yourhandle",
-  linkedin: "https://linkedin.com/in/yourhandle",
+  email: "sarakhataan.ce@gmail.com",
+  github: "https://github.com/sarakhat3an",
+  linkedin: "https://www.linkedin.com/in/sara-khataan-95ba23352/",
   statement:
     "Systems-minded engineer drawn to elegant code, low-level architecture, and the quiet precision of AI. I also sketch.",
   about: [
