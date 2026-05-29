@@ -164,12 +164,12 @@ const DATA = {
     },
   ],
   gallery: [
-    { title: "Portrait Study", medium: "Pencil", year: "2024" },
-    { title: "Architecture", medium: "Ink", year: "2024" },
-    { title: "Abstract Form", medium: "Charcoal", year: "2023" },
-    { title: "Figure Studies", medium: "Pencil", year: "2023" },
-    { title: "Still Life", medium: "Ink", year: "2023" },
-    { title: "Urban Sketch", medium: "Mixed Media", year: "2024" },
+    { title: "Portrait Study", medium: "Pencil", year: "2026", src: "/images/sketch1.jpg" },
+    { title: "Portrait Study", medium: "Acrylic", year: "2024", src: "/images/sketch2.jpeg" },
+    { title: "Character Design", medium: "Acrylic", year: "2023", src: "/images/sketch3.jpeg" },
+    { title: "Portrait Study", medium: "Acrylic", year: "2023", src: "/images/sketch4.jpeg" },
+    { title: "Still Life", medium: "Acrylic", year: "2022", src: "/images/sketch5.jpeg" },
+    { title: "Portrait Sketch", medium: "Charcoal", year: "2024", src: "/images/sketch6.jpeg"},
   ],
 };
 
@@ -1340,22 +1340,19 @@ function GalleryItem({ item }) {
         transition: "background 0.3s",
       }}
     >
-      {/* Placeholder visual — replace with <img src="..." /> */}
-      <div
-        aria-hidden="true"
-        style={{
-          width: "40px",
-          height: "40px",
-          border: `0.5px solid ${COLORS.border}`,
-          borderRadius: "2px",
-          marginBottom: "12px",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-        }}
-      >
-        <Pen size={14} color={COLORS.textMuted} />
-      </div>
+      <img
+  src={item.src}
+  alt={item.title}
+  style={{
+    width: "100%",
+    height: "100%",
+    objectFit: "cover",
+    position: "absolute",
+    inset: 0,
+    opacity: hov ? 0.7 : 0.9,
+    transition: "opacity 0.3s",
+  }}
+/>
 
       <motion.div
         animate={{ opacity: hov ? 1 : 0, y: hov ? 0 : 4 }}
