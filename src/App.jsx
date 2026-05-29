@@ -564,8 +564,8 @@ function Hero() {
         minHeight: "100vh",
         display: "flex",
         flexDirection: "column",
-        justifyContent: "flex-end",
-        padding: "0 clamp(24px, 5vw, 64px) clamp(48px, 8vh, 96px)",
+        justifyContent: "center",
+        padding: "80px clamp(24px, 5vw, 64px) clamp(48px, 8vh, 96px)",
         position: "relative",
         overflow: "hidden",
       }}
