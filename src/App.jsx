@@ -164,12 +164,12 @@ const DATA = {
     },
   ],
   gallery: [
-    { title: "Portrait Study", medium: "Pencil", year: "2026", src: "/images/sketch1.jpg" },
-    { title: "Portrait Study", medium: "Acrylic", year: "2024", src: "/images/sketch2.jpeg" },
-    { title: "Character Design", medium: "Acrylic", year: "2023", src: "/images/sketch3.jpeg" },
-    { title: "Portrait Study", medium: "Acrylic", year: "2023", src: "/images/sketch4.jpeg" },
-    { title: "Still Life", medium: "Acrylic", year: "2022", src: "/images/sketch5.jpeg" },
-    { title: "Portrait Sketch", medium: "Charcoal", year: "2024", src: "/images/sketch6.jpeg"},
+    { title: "Portrait Study", medium: "Pencil", year: "2026", src: "/sarakhataan/images/sketch1.jpg" },
+    { title: "Portrait Study", medium: "Acrylic", year: "2024", src: "/sarakhataan/images/sketch2.jpeg" },
+    { title: "Character Design", medium: "Acrylic", year: "2023", src: "/sarakhataan/images/sketch3.jpeg" },
+    { title: "Portrait Study", medium: "Acrylic", year: "2023", src: "/sarakhataan/images/sketch4.jpeg" },
+    { title: "Still Life", medium: "Acrylic", year: "2022", src: "/sarakhataan/images/sketch5.jpeg" },
+    { title: "Portrait Sketch", medium: "Charcoal", year: "2024", src: "/sarakhataan/images/sketch6.jpeg"},
   ],
 };
 
