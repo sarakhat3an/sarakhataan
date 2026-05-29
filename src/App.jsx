@@ -1052,7 +1052,7 @@ function ProjectCard({ project }) {
               onMouseEnter={(e) => (e.currentTarget.style.color = COLORS.gold)}
               onMouseLeave={(e) => (e.currentTarget.style.color = COLORS.textDim)}
             >
-              <Github size={14} />
+              <GitBranch size={14} />
             </a>
           )}
           {project.demo && (
