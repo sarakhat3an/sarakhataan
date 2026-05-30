@@ -1300,21 +1300,6 @@ function Gallery() {
         ))}
       </motion.div>
 
-      <motion.p
-        variants={fadeIn}
-        initial="hidden"
-        animate={inView ? "visible" : "hidden"}
-        custom={0.4}
-        style={{
-          marginTop: "20px",
-          fontSize: "11px",
-          color: COLORS.textMuted,
-          fontFamily: "'DM Mono', monospace",
-          letterSpacing: "0.05em",
-        }}
-      >
-        — Replace placeholder cells with your actual sketch images
-      </motion.p>
     </section>
   );
 }
